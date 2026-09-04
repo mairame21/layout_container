@@ -22,18 +22,6 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:Container(
-          height: 200,
-          width: 200,
-          padding: const EdgeInsets.all(20),
-          margin: EdgeInsets.symmetric(horizontal: 100,vertical: 100),
-          decoration: BoxDecoration(
-            color:Colors.black,
-            border: Border.all(
-              color: Colors.black,
-            ),
-          borderRadius: BorderRadius.circular(20),
-          ),
           child: Container(
             height: double.infinity,
             width: double.infinity,
@@ -44,11 +32,6 @@ class MyHomePage extends StatelessWidget {
                 ),
                 fit: BoxFit.cover,
               ),
-              border: Border.all(
-              color: Colors.white,
-              width: 3,
-              ),
-              borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
@@ -57,8 +40,7 @@ class MyHomePage extends StatelessWidget {
               )
             ),
           ),
-        )
-      ),
+        ),
     );
   }
 }
