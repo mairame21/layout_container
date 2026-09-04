@@ -27,11 +27,28 @@ class MyHomePage extends StatelessWidget {
           width: 200,
           padding: const EdgeInsets.all(20),
           margin: EdgeInsets.symmetric(horizontal: 100,vertical: 100),
-          color: Colors.black,
+          decoration: BoxDecoration(
+            color:Colors.black,
+            border: Border.all(
+              color: Colors.black,
+            ),
+          borderRadius: BorderRadius.circular(20),
+          ),
           child: Container(
             height: double.infinity,
             width: double.infinity,
             decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  "https://i.pinimg.com/originals/6f/e7/e8/6fe7e86172ebc8cdd6f8dba9d59020d1.png"
+                ),
+                fit: BoxFit.cover,
+              ),
+              border: Border.all(
+              color: Colors.white,
+              width: 3,
+              ),
+              borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
