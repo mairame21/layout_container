@@ -24,15 +24,20 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child:Container(
           height: 200,
-          width: 300,
+          width: 200,
           padding: const EdgeInsets.all(20),
           margin: EdgeInsets.symmetric(horizontal: 100,vertical: 100),
-          color: Colors.deepPurple,
+          color: Colors.black,
           child: Container(
-            height: 200,
-            width: 400,
+            height: double.infinity,
+            width: double.infinity,
             decoration: BoxDecoration(
-              color: Colors.blueGrey,
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors:[Colors.pink,
+                Colors.black ],
+              )
             ),
           ),
         )
