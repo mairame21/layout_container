@@ -21,7 +21,11 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.deepPurple,
+      ),
     );
   }
 }
